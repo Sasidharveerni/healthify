@@ -16,6 +16,6 @@ app.listen(process.env.port, (req, res) => {
     .then(() => {
         console.log("Hey your healthcare database is connected!!")
     }).catch((err) => {
-        console.error("Error in connecting database!!")
+        console.error("Error in connecting database!!:", err)
     })
 })
