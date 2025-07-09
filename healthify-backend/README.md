@@ -25,3 +25,7 @@ Appointment section
 Result section
 
 -> Test report, vaccination report
+
+In SQL we have joins or foreignkey to refer one table
+
+In NoSQL we don't have joins or foreignkey instead we will store the id's other documents in another document.

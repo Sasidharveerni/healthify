@@ -30,10 +30,10 @@ const doctorSchema = mongoose.Schema({
          type: String,
         required: true,
     },
-    scheduledAppointments: {
-        type: Array, // In this Array, petnames or emails should be linked
-        required: true
-    }
+    scheduledAppointments: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Appointment'
+    }]
 })
 
 const doctorModel = mongoose.model('VDoctor', doctorSchema);
